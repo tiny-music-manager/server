@@ -1,0 +1,13 @@
+[Unit]
+Description=Tiny Music Manager Service
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/bin/tmmd start -c /etc/tmmd/tmmd.conf
+LimitNOFILE=1048576
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+{
+	"watch": [
+		"./config/**/*.conf",
+		"./src/**/*.ts",
+		"./typings/types/**/*.d.ts"
+	],
+	"ignore": [
+	],
+	"ext": "js ts"
+}
